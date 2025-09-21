@@ -18,14 +18,13 @@ A comprehensive Vue.js application for wealth management firms to digitize their
 - **Responsive Design** - Mobile-friendly interface using Tailwind CSS
 - **Real-time Data** - Vuex store for state management
 - **Comprehensive Testing** - Unit tests with Jest for all major components
-- **Serial ID System** - Sequential ID generation for users and portfolios
 
 ## 🛠️ Tech Stack
 
 - **Frontend Framework**: Vue.js 3 with Composition API
 - **Build Tool**: Vite
-- **State Management**: Vuex 4
-- **Routing**: Vue Router 4
+- **State Management**: Vuex 
+- **Routing**: Vue Router 
 - **Styling**: Tailwind CSS
 - **Testing**: Jest with Vue Test Utils and jsdom
 - **Package Manager**: npm
@@ -49,15 +48,12 @@ investment-portfolio-management/
 │   ├── views/             # Page-level components (for routing)
 │   │   ├── users/
 │   │   │   ├── UserList.vue
-│   │   │   ├── UserForm.vue
-│   │   │   └── UserForm.test.js
+│   │   │   └── UserForm.vue
 │   │   │
 │   │   ├── portfolios/
 │   │   │   ├── PortfolioList.vue
 │   │   │   ├── PortfolioDetail.vue
-│   │   │   ├── PortfolioForm.vue
-│   │   │   ├── PortfolioList.test.js
-│   │   │   └── PortfolioDetail.test.js
+│   │   │   └── PortfolioForm.vue
 │   │   │
 │   │   └── Home.vue
 │   │
@@ -73,6 +69,10 @@ investment-portfolio-management/
 │   ├── main.js               # App entry (createApp)
 │   └── style.css             # Tailwind + custom global styles
 │
+├── tests/
+│   ├── UserForm.spec.js
+│   ├── PortfolioList.spec.js
+│   └── PortfolioDetail.spec.js
 ├── package.json              
 ├── tailwind.config.js        
 ├── postcss.config.js         
@@ -81,21 +81,6 @@ investment-portfolio-management/
 ├── babel.config.cjs          
 └── README.md
 ```
-
-## 📋 Recent Updates
-
-### Version 2.0.0 - Major Updates
-- **Jest Migration**: Migrated from Vitest to Jest for improved testing experience
-- **Serial ID System**: Implemented sequential ID generation for users and portfolios
-- **UI Improvements**: Added ID column to UserList for better client identification
-- **Portfolio Streamlining**: Removed holdings management for simplified portfolio focus
-- **Test Coverage**: All tests now passing with comprehensive Jest configuration
-- **Code Quality**: Improved error handling and null safety in components
-
-### Breaking Changes
-- Holdings management has been removed from portfolio functionality
-- Test framework changed from Vitest to Jest
-- User IDs are now sequential instead of random
 
 ## 🚀 Getting Started
 
@@ -145,7 +130,6 @@ investment-portfolio-management/
 - **Client List**: View all clients with ID column, search and filtering capabilities
 - **Client Form**: Add new clients or edit existing ones with comprehensive validation
 - **Client Information**: Personal details, contact information, and risk profile selection
-- **Serial ID System**: Sequential ID generation for easy client identification
 
 ### Portfolio Management
 - **Portfolio List**: View all portfolios with status-based filtering and risk level display
@@ -156,7 +140,6 @@ investment-portfolio-management/
 ### Data Management
 - **Vuex Store**: Centralized state management for users and portfolios
 - **Mock Data**: Pre-populated with sample data for demonstration
-- **Data Persistence**: Simulated API calls with local storage
 
 ## 🎨 UI/UX Features
 
@@ -253,48 +236,6 @@ The application uses Tailwind CSS with a custom configuration:
 }
 ```
 
-## 🚀 Deployment
-
-### Production Build
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-### Deployment Options
-- **Static Hosting**: Deploy to Netlify, Vercel, or GitHub Pages
-- **CDN**: Use services like AWS CloudFront or Cloudflare
-- **Traditional Hosting**: Upload to any web server
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-For support, email support@example.com or create an issue in the repository.
-
-## 🔮 Future Enhancements
-
-- **Real API Integration**: Replace mock data with actual API calls
-- **Authentication**: Add user authentication and authorization
-- **Advanced Analytics**: Portfolio performance charts and analytics
-- **Export Functionality**: Export data to CSV/PDF formats
-- **Real-time Updates**: WebSocket integration for real-time data
-- **Mobile App**: React Native or Flutter mobile application
-- **Advanced Reporting**: Comprehensive reporting and dashboard features
-- **Holdings Management**: Re-introduce individual stock holdings tracking
-- **Performance Metrics**: Advanced portfolio performance analysis
-- **Client Portal**: Self-service client dashboard
 
 ---
 
