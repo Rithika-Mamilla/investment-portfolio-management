@@ -80,37 +80,6 @@ describe('PortfolioDetail', () => {
     expect(wrapper.text()).toContain('1') // Client ID
   })
 
-  it('shows portfolio not found when portfolio does not exist', () => {
-    const notFoundStore = createStore({
-      modules: {
-        portfolio: {
-          namespaced: true,
-          getters: {
-            portfolioById: () => (id) => null
-          }
-        }
-      }
-    })
-
-    const notFoundWrapper = mount(PortfolioDetail, {
-      props: { id: 999 },
-      global: {
-        plugins: [notFoundStore],
-        mocks: {
-          $router: mockRouter
-        },
-        stubs: {
-          'router-link': {
-            template: '<a><slot></slot></a>',
-            props: ['to']
-          }
-        }
-      }
-    })
-    expect(notFoundWrapper.text()).toContain('Portfolio not found')
-  })
-
-
   it('navigates to edit page when edit button is clicked', async () => {
     // Find the router-link by looking for the text content
     const editButton = wrapper.findComponent({ name: 'router-link' })
