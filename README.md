@@ -239,5 +239,5 @@ The application uses Tailwind CSS with a custom configuration:
 
 ---
 
-Built with ❤️ using Vue.js and modern web technologies.
+Built using Vue.js and modern web technologies.
 
