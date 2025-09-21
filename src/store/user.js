@@ -6,7 +6,7 @@ export default {
         id: 1,
         name: 'Rajesh Kumar',
         email: 'rajesh.kumar@gmail.com',
-        phone: '+91-98765-43210',
+        phone: '+91-9876543210',
         address: '123 MG Road, Mumbai, Maharashtra 400001',
         dateOfBirth: '1990-03-15',
         riskProfile: 'Moderate',
@@ -16,21 +16,21 @@ export default {
         id: 2,
         name: 'Priya Sharma',
         email: 'priya.sharma@yahoo.com',
-        phone: '+91-98765-43211',
+        phone: '+91-9876543211',
         address: '456 Brigade Road, Bangalore, Karnataka 560001',
         dateOfBirth: '1984-11-22',
         riskProfile: 'Conservative',
-        createdAt: '2024-09-17'
+        createdAt: '2025-09-17'
       },
       {
         id: 3,
         name: 'Amit Patel',
         email: 'amit.patel@outlook.com',
-        phone: '+91-98765-43212',
+        phone: '+91-9876543212',
         address: '789 Connaught Place, New Delhi, Delhi 110001',
         dateOfBirth: '1993-07-08',
         riskProfile: 'Aggressive',
-        createdAt: '2024-09-19'
+        createdAt: '2025-09-19'
       }
     ],
     nextId: 4,
